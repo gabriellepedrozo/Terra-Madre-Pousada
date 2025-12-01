@@ -1,0 +1,60 @@
+*{overflow-x: hidden;
+  overflow-y: hidden;}
+
+/*edições na section*/
+.imagens-suite {
+    background-color: #8f9b79;
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/*edita textos*/
+.imagens-suite h3 {
+    font-size: 20px;
+   
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.imagens-suite img {
+    width: 330px;      /* ajuste igual para todas as imagens */
+    height: 430px;     /* proporção igual – igual ao modelo da foto */
+    object-fit: cover; /* garante que a imagem não distorça */
+    border-radius: 6px;
+}
+
+
+
+.item-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px; /* espaçamento igual entre as fotos */
+}
+
+
+/*botão preço*/
+.btn-preco {
+    background-color: #ffffff;
+    color: #596248;
+    padding: 18px 40px;
+    border: none;
+    border-radius: 40px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 30px;
+
+}
+

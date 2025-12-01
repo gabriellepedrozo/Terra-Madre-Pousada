@@ -1,0 +1,256 @@
+*{
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+overflow-x: hidden;
+font-family:"Winky Sans",serif;
+
+}
+
+html{
+    scroll-behavior: smooth;}  /*comportamento de rolagem- suave*/
+
+header{ 
+  padding: 15px 0px;    /*espaço na parte superior e lado esquerdo*/
+  position: fixed;      /*o menu nao rola com a página*/
+  width: 100%;                    
+  background-color: #697358;   /*cor de fundo*/
+   z-index: 9999;}       /*sobrepõe uma coisa sobre outra; cria camadas*/
+
+header nav ul{ 
+   list-style: none;
+   text-align: left;}
+   
+header nav ul li{ 
+      display: inline;}
+
+header nav ul li a { 
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2px 10px;
+    display: inline-block;
+    text-align: end;
+} 
+    
+
+header nav ul li a:hover{ 
+   color:#304837}
+   /*-----------------------------------------------------------------*/
+
+section {
+    width: 100%;
+    height: auto;
+
+}
+
+section,footer{
+   padding-top: 60px;
+   padding-bottom: 60px;}
+
+
+section:nth-child(even) {
+    background-color: #697358
+}
+
+section:nth-child {
+    background-color: #697358
+}
+        /*apartir daqui terminam os ajustes do site e começam os ajustes de imagem, itens no site e as aplicações dos mesmos*/
+
+        .banner { 
+          display: flex;    /* ajuste de acordo com a disposição do espaço*/ 
+          align-items: center; /*alinha na vertical*/
+          justify-content:center; /*alinha na horizontal*/
+
+        }
+
+        .banner img { 
+
+            width: 100%;
+            height: 100%;
+        }
+        
+
+    
+
+        .flexivel { 
+                display: flex;  /*organiza os conteiners*/
+                flex-direction: row;
+                justify-content: space-between;
+
+        }
+
+
+
+.vantagens-galeria {
+    display: flex; 
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.vantagens img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    font-family: sitka text;
+}
+
+   
+     article {  /*representa uma composição indepente em um doc, como um post de blog, notícia ou comentario.*/
+      width: 100%;
+       padding: 10px;
+        }
+
+   
+
+        .mini { /*essa classe vai gerar a miniatura das imagens e ajustá-las na tag article*/
+           width: 420px;          /* Largura fixa */
+           height: 550px;         /* Altura fixa para manter proporção parecida */
+           object-fit: cover;     /* Faz a imagem preencher sem distorcer */
+           object-position: center;
+           cursor: pointer; /*quando passa o mouse em cima vai ter uma maozinha*/
+                            }
+      
+   
+
+     /*aqui acaba imagens de fundo e rodapé e começa a parte javascript, depois do footer no site*/
+
+     /*teste para ajustar a imagem e o texto das seções do site*/
+
+     /* --- Fundo geral da section --- */
+
+
+
+
+     
+/* SECTION VERDE ESCURA E CLARA */
+.suite-section {
+    background-color: #697358;   /* mesma cor da foto */
+    padding: 120px 0;            /* espaço superior e inferior */
+    display: flex;
+    justify-content: center;
+}
+
+.suite-section2 {
+    background-color: #9dab89;   /* mesma cor da foto */
+    padding: 120px 0;            /* espaço superior e inferior */
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/* Container com 2 colunas para textos e img*/
+.suite-container {
+    width: 1200px;               
+    display: flex;
+    align-items: center;
+    gap: 70px;                   
+}
+
+/* IMAGENS */
+.suite-foto {
+    width: 430px;                /* largura idêntica ao exemplo */
+    height: 520px;               /* altura idêntica ao exemplo */
+    object-fit: cover;           /* recorte perfeito */
+    object-position: center;     /* centraliza o foco */
+    border-radius: 4px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.18);
+    flex-shrink: 0;              /* EVITA a imagem diminuir */
+}
+
+/* TEXTO */
+.suite-texto h2 {
+    font-size: 56px;             /* mesmo tamanho da arte */
+    font-weight: 300;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.suite-texto p {
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 14px;
+    max-width: 600px;            /* deixa a coluna igual à da foto */
+}
+
+/* BOTÃO */
+.suite-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #7c8f6b;
+    padding: 20px 70px;
+    border-radius: 50px;
+    font-size: 22px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.suite-btn:hover {
+    background-color: #6b7d5d;
+}
+
+
+
+
+/*seção final com footer*/
+
+/* ----- SECTION RESERVE JÁ ----- */
+
+.section {   /*tamanho*/
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.box { /*borda*/
+    width: 90%;
+    max-width: 1100px;
+    border: 2px solid #6c765b;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/*ajustes de texto e img*/
+.titulo {
+    font-size: 52px;
+    color: #6c765b;
+    font-weight: 300;
+    margin-bottom: 40px;
+    letter-spacing: 3px;
+}
+
+
+.contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.icon-whats {
+    width: 85px;
+}
+
+.numero {
+    font-size: 48px;
+    color: #6c765b;
+    letter-spacing: 3px;
+}
+
+/* ----- FOOTER COM ENDEREÇO ----- */
+
+.rodape {
+    background-color: #7d876a;
+    color: #e5e5e5;
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
